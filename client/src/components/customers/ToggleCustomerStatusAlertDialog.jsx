@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button"
 export function ToggleCustomerStatusAlertDialog({ customerId, customersData, isOpen, onClose, onConfirm }) {
   if (!isOpen || !customersData) return null
 
-  const customer = customersData.find((c) => c.id === customerId);
+  const customer = customersData.find((c) => c.ownerId === customerId);
   const isActive = customer?.isActive;
 
   return (

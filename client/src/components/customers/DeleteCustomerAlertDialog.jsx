@@ -19,8 +19,7 @@ export function DeleteCustomerAlertDialog({ customerId, isOpen, onClose, onConfi
         <AlertDialogHeader>
           <AlertDialogTitle>Xác nhận xóa khách hàng</AlertDialogTitle>
           <AlertDialogDescription>
-            Bạn có chắc chắn muốn xóa khách hàng này? Hành động này không thể hoàn tác và sẽ xóa tất cả dữ liệu liên
-            quan bao gồm hợp đồng, hóa đơn và lịch sử giao dịch.
+            Bạn có chắc chắn muốn xóa khách hàng này? Hành động này không thể hoàn tác.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>

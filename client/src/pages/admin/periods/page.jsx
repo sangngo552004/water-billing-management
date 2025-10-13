@@ -295,7 +295,7 @@ export default function PeriodsPage() {
             <AlertDialogHeader>
               <AlertDialogTitle>Xác nhận hoàn thành kỳ</AlertDialogTitle>
               <AlertDialogDescription>
-                Bạn có chắc chắn muốn đánh dấu kỳ này là đã hoàn thành? Thao tác này có thể không thể hoàn tác và ảnh hưởng đến việc ghi số/thu tiền trong kỳ.
+                Bạn có chắc chắn muốn đánh dấu kỳ này là đã hoàn thành? 
               </AlertDialogDescription>
             </AlertDialogHeader>
             <AlertDialogFooter>

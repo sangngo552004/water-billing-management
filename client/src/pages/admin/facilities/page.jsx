@@ -318,8 +318,7 @@ export default function FacilitiesPage() {
             <AlertDialogHeader>
               <AlertDialogTitle>Xác nhận xóa cơ sở</AlertDialogTitle>
               <AlertDialogDescription>
-                Bạn có chắc chắn muốn xóa cơ sở này? Hành động này không thể hoàn tác và sẽ xóa tất cả dữ liệu liên quan
-                bao gồm hợp đồng và đồng hồ nước.
+                Bạn có chắc chắn muốn xóa cơ sở này? 
               </AlertDialogDescription>
             </AlertDialogHeader>
             <AlertDialogFooter>

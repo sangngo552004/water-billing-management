@@ -205,7 +205,7 @@ export default function WaterMetersPage() {
             <AlertDialogHeader>
               <AlertDialogTitle>Xác nhận xóa đồng hồ nước</AlertDialogTitle>
               <AlertDialogDescription>
-                Bạn có chắc chắn muốn xóa đồng hồ này? Tất cả bản ghi đo và dữ liệu liên quan sẽ bị xóa vĩnh viễn.
+                Bạn có chắc chắn muốn xóa đồng hồ này? 
               </AlertDialogDescription>
             </AlertDialogHeader>
             <AlertDialogFooter>

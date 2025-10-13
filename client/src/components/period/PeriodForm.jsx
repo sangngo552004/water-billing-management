@@ -6,14 +6,14 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { PERIOD_FILTER_DATA } from "@/hooks/usePeriods"; // Import dữ liệu lọc/trạng thái
 
 function PeriodForm({ initialData, onClose, onSubmit }) {
-  const [name, setName] = useState(initialData?.name || "");
+  const [name, setName] = useState(initialData?.periodName || "");
   const [toDate, setToDate] = useState(initialData?.toDate || "");
   // Giả định trạng thái ban đầu khi tạo mới, hoặc từ dữ liệu chỉnh sửa
 
 
   useEffect(() => {
     if (initialData) {
-      setName(initialData.name || "");
+      setName(initialData.periodName || "");
       setToDate(initialData.toDate || "");
     } else {
       // Reset form khi thêm mới

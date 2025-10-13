@@ -241,9 +241,6 @@ export default function PeriodDetailPage() {
                       <TableCell>{contract.customerName}</TableCell>
                       <TableCell>{contract.address}</TableCell>
                       <TableCell>
-                         {contract.recordDate ? new Date(contract.recordDate).toLocaleDateString("vi-VN") : "—"}
-                      </TableCell>
-                      <TableCell>
                         {getStatusBadge(contract.status, contract.isPaused)}
                       </TableCell>
                       <TableCell>

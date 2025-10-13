@@ -18,9 +18,9 @@ public interface RequestRepository extends JpaRepository<Request, Long> {
             "LEFT JOIN Contract c ON r.contract.contractId = c.contractId " +
             "LEFT JOIN Owner o ON c.owner.ownerId = o.ownerId " +
             "WHERE (:searchTerm IS NULL OR :searchTerm = '' " +
-            "       OR CAST(r.requestId AS string) LIKE %:searchTerm% " + // Ví dụ: tìm kiếm theo RequestId// Ví dụ: tìm kiếm theo ContractId
-            "       OR LOWER(c.customerCode) LIKE LOWER(CONCAT('%', :searchTerm, '%')) " + // Tìm trong CustomerCode của Contract
-            "       OR LOWER(o.fullName) LIKE LOWER(CONCAT('%', :searchTerm, '%')) " + // Tìm trong FullName của Owner
+            "       OR CAST(r.requestId AS string) LIKE CONCAT('%', :searchTerm, '%') " +
+            "       OR LOWER(c.customerCode) LIKE LOWER(CONCAT('%', :searchTerm, '%')) " +
+            "       OR LOWER(o.fullName) LIKE LOWER(CONCAT('%', :searchTerm, '%')) " +
             "      ) " +
             "AND (:status IS NULL OR r.status = :status) " +
             "AND (:requestType IS NULL OR r.requestType = :requestType)")
@@ -30,6 +30,7 @@ public interface RequestRepository extends JpaRepository<Request, Long> {
             @Param("requestType") RequestType requestType,
             Pageable pageable
     );
+
 
     int countByStatus(RequestStatus status);
 }
