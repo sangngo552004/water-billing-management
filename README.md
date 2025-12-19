@@ -5,66 +5,66 @@ This project is a comprehensive solution designed to automate the management, ca
 The system is built with three distinct user roles:
 
 ### 1. For Customers (Owners)
-**Dashboard**: View the latest bills, water usage trends via charts, and current pricing tiers.
+- **Dashboard**: View the latest bills, water usage trends via charts, and current pricing tiers.
 
-**Billing Management**: Search billing history, view detailed cost breakdowns by tiers, and manage payments.
+- **Billing Management**: Search billing history, view detailed cost breakdowns by tiers, and manage payments.
 
-**Meter Tracking**: Monitor active water meters associated with their contracts.
+- **Meter Tracking**: Monitor active water meters associated with their contracts.
 
-**Requests**: Submit requests for information updates or service suspension.
+- **Requests**: Submit requests for information updates or service suspension.
 
 ### 2. For Employees
-**Meter Reading**: Record new water meter readings in the field.
+- **Meter Reading**: Record new water meter readings in the field.
 
-**Collection Management**: Handle direct cash collections and update payment statuses for invoices.
+- **Collection Management**: Handle direct cash collections and update payment statuses for invoices.
 
 ### 3. For Administrators
-**Entity Management**: Manage customers (owners), employees, contracts, facilities, and water meters.
+- **Entity Management**: Manage customers (owners), employees, contracts, facilities, and water meters.
 
-**Pricing Configuration**: Set up and update flexible tiered pricing for different contract types.
+- **Pricing Configuration**: Set up and update flexible tiered pricing for different contract types.
 
-**Billing Cycles**: Create, manage, and close periodic billing cycles.
+- **Billing Cycles**: Create, manage, and close periodic billing cycles.
 
-**Approval Workflow**: Verify meter readings recorded by employees before invoices are automatically generated.
+- **Approval Workflow**: Verify meter readings recorded by employees before invoices are automatically generated.
 
 ## 🛠 Tech Stack
 ## Backend
-**Framework**: Java Spring Boot 3.4.3.
+- **Framework**: Java Spring Boot 3.4.3.
 
-**Security**: Spring Security with OAuth2 Resource Server & JWT.
+- **Security**: Spring Security with OAuth2 Resource Server & JWT.
 
-**Database**: MySQL.
+- **Database**: MySQL.
 
-**Libraries**: * Lombok & MapStruct: For boilerplate reduction and object mapping.
+- **Libraries**: * Lombok & MapStruct: For boilerplate reduction and object mapping.
 
-**iText7**: For PDF invoice generation.
+- **iText7**: For PDF invoice generation.
 
-**Spring Mail**: For OTP and system notifications.
+- **Spring Mail**: For OTP and system notifications.
 
-**Jakarta Validation**: For data integrity.
+- **Jakarta Validation**: For data integrity.
 
 ## Frontend
-**Framework**: React 19 with Vite.
+- **Framework**: React 19 with Vite.
 
-**State Management**: Redux Toolkit & Redux Persist.
+- **State Management**: Redux Toolkit & Redux Persist.
 
-**UI Components**: Tailwind CSS 4, Radix UI primitives (Shadcn/UI), and Lucide React icons.
+- **UI Components**: Tailwind CSS 4, Radix UI primitives (Shadcn/UI), and Lucide React icons.
 
-**Data Visualization**: Recharts.
+- **Data Visualization**: Recharts.
 
-**Form Validation**: Zod.
+- **Form Validation**: Zod.
 
-**API Client**: Axios.
+- **API Client**: Axios.
 
 ## 📋 Prerequisites
-**Java**: 17 or higher.
+- **Java**: 17 or higher.
 
-**Node.js**: Latest LTS version.
+- **Node.js**: Latest LTS version.
 
-**Database**: MySQL Server.
+- **Database**: MySQL Server.
 
 ## 🔧 Installation & Setup
-**1. Backend Setup**
+### 1. Backend Setup
 1. Navigate to the server/ directory.
 
 2. Configure your database credentials and mail settings in src/main/resources/application.properties or application.yaml.
@@ -77,7 +77,7 @@ Bash
 
 ./mvnw spring-boot:run
 ```
-**2. Frontend Setup**
+### 2. Frontend Setup
 1. Navigate to the client/ directory.
 
 2. Install dependencies:
